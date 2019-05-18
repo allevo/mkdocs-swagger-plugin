@@ -53,12 +53,11 @@ function createHandler(apiDefinition) {
   const path = apiDefinition.path
 
   return function onClick(ev) {
-    const button = ev.currentTarget
-    if (button.open) {
+    const div = ev.currentTarget
+    if (div.open) {
       return
     }
-    button.open = true
-    const div = button.parentNode
+    div.open = true
 
     const paramsDiv = document.createElement('div')
 
