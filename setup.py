@@ -10,7 +10,7 @@ setup(
     author_email='tomallevi@gmail.com',
     description='Fire http request described in a swagger file',
     install_requires=['mkdocs'],
-
+    include_package_data=True,
     # The following rows are important to register your plugin.
     # The format is "(plugin name) = (plugin folder):(class name)"
     # Without them, mkdocs will not be able to recognize it.
